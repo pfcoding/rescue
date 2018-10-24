@@ -5,7 +5,12 @@ code sample for Rescue Agency
 This code sample was create using Laravel 5.7.10/VueJS on LAMP (MySQL 5.7.23, Apache.  Per the .env file, a database named "rescue" needs to be created.  Lodash was imported to do a slight debounce on the key field.  Standard packages in the default Laravel installer are included.
 
 php artisan migrate
+
 npm install
+
+ensure ./storage/files/uploads is writeable by the web server user (e.g. chown -R www-data, etc.)
+
+php artisan key:generate
 
 # assumptions
 - User uploads pokemon.json, but can skip this step if re-loading the page
