@@ -1,5 +1,7 @@
-# rescue
-code sample for Rescue Agency
+# background
+The following is a code sample provided during an interview for a PHP position.  The assignment brings to bear both back- and front-end skills.  
+
+The front end is not super "dolled up" per se, but does make use of Bootstrap and VueJS.  I have many years of jQuery and waited for the dust to settle when all the JS frameworks came out.  I have worked with VueJS and Angular in the last year.
 
 # install
 This code sample was create using Laravel 5.7.10/VueJS on LAMP (MySQL 5.7.23, Apache.  Per the .env file, a database named "rescue" needs to be created.  Lodash was imported to do a slight debounce on the key field.  Standard packages in the default Laravel installer are included.
@@ -30,7 +32,5 @@ valid json is parsed and inserted into a MySQL table 'pokemon' that contains a j
 
 # observations
 After spending a bit of time on querying json columns, it turns out a standard LIKE %{keyword}% is sufficient.  There are no wildcard searches within JSON_CONTAINS() in MySQL.
-
-This was cute and fun.
 
 
